@@ -1,5 +1,30 @@
+$dark-blue: #5f52f2;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+    max-width: 576px;
+}
+
+.navbar-wrapper {
+    background: $dark-blue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbar__logo {
+        width: 0.39186574074074074074 * 412px;
+    }
+    .navbar__social-links {
+        display: none;
+    }
 }
