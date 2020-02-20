@@ -47,6 +47,12 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .navbar {
+        .navbar__social-links {
+            display: block;
+        }
+    }
+
     .navbar__title {
         font-size: 2.4081rem;
     }
