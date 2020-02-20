@@ -41,4 +41,11 @@ $dark-blue: #5f52f2;
     }
 }
 
+.social-link {
+    svg {
+        fill: white;
+        height: 0.09134722222222222222 * 412px;
+    }
+}
+
 @import "./breakpoints";

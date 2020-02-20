@@ -48,6 +48,11 @@
   height: 37.63506px;
 }
 
+.social-link svg {
+  fill: white;
+  height: 37.63506px;
+}
+
 @media only screen and (min-width: 576px) {
   .container {
     max-width: 673px;
