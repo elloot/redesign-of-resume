@@ -42,10 +42,20 @@
   display: none;
 }
 
+.navbar .navbar__social-links .social-link {
+  margin-right: 20px;
+}
+
 .navbar .navbar__hamburger-icon-wrapper svg {
   fill: white;
   width: 37.63506px;
   height: 37.63506px;
+}
+
+.navbar .navbar__hamburger-social-links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social-link svg {

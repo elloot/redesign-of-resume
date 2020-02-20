@@ -31,6 +31,9 @@ $dark-blue: #5f52f2;
     }
     .navbar__social-links {
         display: none;
+        .social-link {
+            margin-right: 20px;
+        }
     }
     .navbar__hamburger-icon-wrapper {
         svg {
@@ -38,6 +41,9 @@ $dark-blue: #5f52f2;
             width: 0.09134722222222222222 * 412px;
             height: 0.09134722222222222222 * 412px;
         }
+    }
+    .navbar__hamburger-social-links-wrapper {
+        display: flex;
     }
 }
 
