@@ -47,6 +47,14 @@ $dark-blue: #5f52f2;
     }
 }
 
+.menu {
+    background: black;
+    .menu__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .social-link {
     svg {
         fill: white;

@@ -58,6 +58,20 @@
   display: flex;
 }
 
+.menu {
+  background: black;
+}
+
+.menu .menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .social-link svg {
   fill: white;
   height: 37.63506px;
