@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: Nunito;
+}
+
 a {
   text-decoration: none;
 }
@@ -77,6 +81,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu .menu__container .menu__link {
+  font-size: 1rem;
 }
 
 .social-link svg {
