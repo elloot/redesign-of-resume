@@ -78,11 +78,11 @@ a {
           box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 5px 5px;
   position: absolute;
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateY(-150%) translateX(-50%);
+          transform: translateY(-150%) translateX(-50%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  left: 35%;
+  left: 50%;
   z-index: -1;
 }
 
@@ -111,8 +111,8 @@ a {
 }
 
 .show-menu {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(0) translateX(-50%);
+          transform: translateY(0) translateX(-50%);
 }
 
 .social-link svg {
