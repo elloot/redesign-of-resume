@@ -20,6 +20,11 @@ a {
   max-width: 576px;
 }
 
+.navigation-wrapper {
+  z-index: 1;
+  position: relative;
+}
+
 .navbar-wrapper {
   background: #5f52f2;
 }
@@ -35,6 +40,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 3px 0;
+  z-index: 1;
 }
 
 .navbar .navbar__logo {
@@ -107,7 +113,6 @@ a {
 .show-menu {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  z-index: inherit;
 }
 
 .social-link svg {

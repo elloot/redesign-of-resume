@@ -21,6 +21,11 @@ a {
     max-width: 576px;
 }
 
+.navigation-wrapper {
+    z-index: 1;
+    position: relative;
+}
+
 .navbar-wrapper {
     background: $dark-blue;
 }
@@ -30,6 +35,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 3px 0;
+    z-index: 1;
     .navbar__logo {
         width: 100%;
         height: 100%;
@@ -82,7 +88,6 @@ a {
 
 .show-menu {
     transform: translateY(0);
-    z-index: inherit;
 }
 
 .social-link {
