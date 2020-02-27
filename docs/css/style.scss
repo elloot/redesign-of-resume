@@ -67,9 +67,10 @@ a {
     border-radius: 0 0 5px 5px;
     position: absolute;
     transform: translateY(-150%) translateX(-50%);
-    transition: all 0.5s;
+    transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     left: 50%;
     z-index: -1;
+    width: 100%;
     .menu__container {
         padding: 10px 0;
         display: flex;
@@ -78,9 +79,25 @@ a {
         .menu__link {
             font-size: 1.5rem;
             color: black;
+            position: relative;
             /*border-bottom: 2px solid orange;*/
             &:not(:first-child) {
                 padding-top: 3px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                transition: width 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                height: 2px;
+                background-color: orange;
+                z-index: 1;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &:hover::after {
+                width: 80%;
             }
         }
     }
