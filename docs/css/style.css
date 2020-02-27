@@ -90,8 +90,8 @@ a {
   position: absolute;
   -webkit-transform: translateY(-150%) translateX(-50%);
           transform: translateY(-150%) translateX(-50%);
-  -webkit-transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -webkit-transition: all 0.5s cubic-bezier(0.6, -0.48, 0.34, 1.45);
+  transition: all 0.5s cubic-bezier(0.6, -0.48, 0.34, 1.45);
   left: 50%;
   z-index: -1;
   width: 100%;
