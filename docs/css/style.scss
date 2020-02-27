@@ -50,21 +50,16 @@ a {
         }
     }
     .navbar__hamburger-icon-wrapper {
-        /*svg {
-            fill: white;
-            width: 0.09134722222222222222 * 412px;
-            height: 0.09134722222222222222 * 412px;
-        }*/
         height: 0.09134722222222222222 * 412px;
+        &:hover {
+            cursor: pointer;
+        }
         .hamburger-icon {
             height: 5px;
             background: white;
             width: 0.09134722222222222222 * 412px;
             margin-top: 6px;
             border-radius: 1000px;
-            /*&:not(:first-child) {
-                margin-top: 6px;
-            }*/
             .top {
             }
             .mid {

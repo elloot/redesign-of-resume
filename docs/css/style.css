@@ -61,12 +61,11 @@ a {
 }
 
 .navbar .navbar__hamburger-icon-wrapper {
-  /*svg {
-            fill: white;
-            width: 0.09134722222222222222 * 412px;
-            height: 0.09134722222222222222 * 412px;
-        }*/
   height: 37.63506px;
+}
+
+.navbar .navbar__hamburger-icon-wrapper:hover {
+  cursor: pointer;
 }
 
 .navbar .navbar__hamburger-icon-wrapper .hamburger-icon {
@@ -75,9 +74,6 @@ a {
   width: 37.63506px;
   margin-top: 6px;
   border-radius: 1000px;
-  /*&:not(:first-child) {
-                margin-top: 6px;
-            }*/
 }
 
 .navbar .navbar__hamburger-social-links-wrapper {
