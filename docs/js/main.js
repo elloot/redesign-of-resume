@@ -4,6 +4,6 @@
 
     button.addEventListener("click", e => {
         menu.classList.toggle("show-menu");
-        button.classList.toggle("cross");
+        button.classList.toggle("hamburger-cross");
     });
 })();

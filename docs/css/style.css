@@ -62,9 +62,6 @@ a {
 
 .navbar .navbar__hamburger-icon-wrapper {
   height: 37.63506px;
-}
-
-.navbar .navbar__hamburger-icon-wrapper:hover {
   cursor: pointer;
 }
 
@@ -76,31 +73,35 @@ a {
   border-radius: 1000px;
 }
 
+.navbar .navbar__hamburger-icon-wrapper .top,
+.navbar .navbar__hamburger-icon-wrapper .mid,
+.navbar .navbar__hamburger-icon-wrapper .bottom {
+  -webkit-transition: all 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
 .navbar .navbar__hamburger-social-links-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.top,
-.mid,
-.bottom {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.cross .top {
+.hamburger-cross .top {
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotate(-45deg) translate(0, 220%);
-          transform: rotate(-45deg) translate(0, 220%);
+  -webkit-transform: translate(0, 220%) rotate(-45deg);
+          transform: translate(0, 220%) rotate(-45deg);
 }
 
-.cross .bottom {
+.hamburger-cross .bottom {
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotate(45deg) translate(0, -220%);
-          transform: rotate(45deg) translate(0, -220%);
+  -webkit-transform: translate(0, -220%) rotate(45deg);
+          transform: translate(0, -220%) rotate(45deg);
+}
+
+.hamburger-cross .mid {
+  opacity: 0;
 }
 
 .menu {
