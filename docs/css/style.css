@@ -82,14 +82,25 @@ a {
   display: flex;
 }
 
+.top,
+.mid,
+.bottom {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .cross .top {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-45deg) translate(0, 220%);
+          transform: rotate(-45deg) translate(0, 220%);
 }
 
 .cross .bottom {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(45deg) translate(0, -220%);
+          transform: rotate(45deg) translate(0, -220%);
 }
 
 .menu {

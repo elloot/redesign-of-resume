@@ -67,12 +67,20 @@ a {
     }
 }
 
+.top,
+.mid,
+.bottom {
+    transition: all 0.3s ease;
+}
+
 .cross {
     .top {
-        transform: rotate(-45deg) translate(-9px, 6px);
+        transform-origin: center;
+        transform: rotate(-45deg) translate(0, 220%);
     }
     .bottom {
-        transform: rotate(45deg) translate(-8px, -8px);
+        transform-origin: center;
+        transform: rotate(45deg) translate(0, -220%);
     }
 }
 
