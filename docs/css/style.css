@@ -7,6 +7,7 @@
 
 body {
   font-family: Nunito;
+  background: #bfbafa;
 }
 
 a {
@@ -171,6 +172,38 @@ a {
 .social-link svg {
   fill: white;
   height: 37.63506px;
+}
+
+.card-wrapper {
+  padding: 12px;
+  background: white;
+  border-radius: 7px;
+  margin: 12px 0;
+  /*
+    .card__image-wrapper {
+        width: 100%;
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    */
+}
+
+.card-wrapper .bigwrap {
+  width: 100%;
+}
+
+.card-wrapper .card__image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.card-wrapper .card__image-wrapper img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 576px) {
