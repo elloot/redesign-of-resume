@@ -135,7 +135,8 @@ a {
 }
 
 .menu .menu__container .menu__link {
-  font-size: 1.5rem;
+  font-size: 24px;
+  letter-spacing: 0;
   color: black;
   position: relative;
   /*border-bottom: 2px solid orange;*/
@@ -192,7 +193,18 @@ a {
     */
 }
 
-.card-wrapper .bigwrap {
+.card-wrapper .card__title {
+  font-size: 34px;
+  letter-spacing: 0.25px;
+  font-style: normal;
+}
+
+.card-wrapper .card__text {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.card-wrapper .card__image-container {
   width: 100%;
 }
 
@@ -204,6 +216,31 @@ a {
 .card-wrapper .card__image-wrapper img {
   width: 100%;
   border-radius: 50%;
+}
+
+.card-wrapper .card__list li {
+  list-style: none;
+}
+
+.card-wrapper .card__list li .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-wrapper .card__list li .social-link svg {
+  fill: #ffa84a;
+}
+
+.card-wrapper .card__list li .social-link p {
+  color: #ffba6e;
 }
 
 @media only screen and (min-width: 576px) {
