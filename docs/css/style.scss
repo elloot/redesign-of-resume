@@ -194,6 +194,15 @@ a {
             }
         }
     }
+    .card__list-skills {
+        margin-left: 12px;
+        .card__skill-wrapper {
+            li {
+                list-style: disc;
+                color: $lighter-orange;
+            }
+        }
+    }
     /*
     .card__image-wrapper {
         width: 100%;

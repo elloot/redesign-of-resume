@@ -252,6 +252,15 @@ a {
   color: #ffba6e;
 }
 
+.card-wrapper .card__list-skills {
+  margin-left: 12px;
+}
+
+.card-wrapper .card__list-skills .card__skill-wrapper li {
+  list-style: disc;
+  color: #ffba6e;
+}
+
 @media only screen and (min-width: 576px) {
   .container {
     max-width: 673px;
