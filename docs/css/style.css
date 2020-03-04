@@ -206,15 +206,24 @@ a {
 
 .card-wrapper .card__image-container {
   width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.card-wrapper .card__image-wrapper {
+.card-wrapper .card__image-container .card__image-wrapper {
+  height: 100%;
+  max-width: 300px;
+}
+
+.card-wrapper .card__image-container .card__image-wrapper img {
+  /*object-fit: cover;*/
   width: 100%;
   height: 100%;
-}
-
-.card-wrapper .card__image-wrapper img {
-  width: 100%;
   border-radius: 50%;
 }
 
@@ -299,11 +308,12 @@ a {
   .footer__link {
     font-size: 1.39rem;
   }
-  .frontpage__article-image-wrapper {
-    height: 350px;
+  .card__image-wrapper {
+    max-width: 350px !important;
   }
 }
 
+/*THIS WILL BE THE DESKTOP BREAKPOINT*/
 @media only screen and (min-width: 992px) {
   .container {
     width: 96%;

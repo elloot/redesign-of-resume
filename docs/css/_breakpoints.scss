@@ -73,11 +73,12 @@
         font-size: 1.39rem;
     }
 
-    .frontpage__article-image-wrapper {
-        height: 350px;
+    .card__image-wrapper {
+        max-width: 350px !important;
     }
 }
 
+/*THIS WILL BE THE DESKTOP BREAKPOINT*/
 @media only screen and (min-width: 992px) {
     .container {
         width: 96%;
