@@ -252,13 +252,14 @@ a {
   color: #ffba6e;
 }
 
-.card-wrapper .card__list-skills {
-  margin-left: 12px;
+.card-wrapper .card__list-skills .card__skill-wrapper .card__skill-title {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #ffba6e;
 }
 
-.card-wrapper .card__list-skills .card__skill-wrapper li {
-  list-style: disc;
-  color: #ffba6e;
+.card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
+  display: none;
 }
 
 @media only screen and (min-width: 576px) {
@@ -302,6 +303,18 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .card-wrapper .card__list-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

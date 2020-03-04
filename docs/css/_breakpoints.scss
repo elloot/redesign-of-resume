@@ -39,6 +39,18 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    //is it better to nest everything or should I use "!important"?
+    .card-wrapper {
+        .card__list-skills {
+            display: flex;
+            flex-direction: column;
+            .card__skill-wrapper {
+                .card__skill-info {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1200px) {

@@ -195,11 +195,14 @@ a {
         }
     }
     .card__list-skills {
-        margin-left: 12px;
         .card__skill-wrapper {
-            li {
-                list-style: disc;
+            .card__skill-title {
+                font-size: $body-1-font-size;
+                letter-spacing: $body-1-letter-spacing;
                 color: $lighter-orange;
+            }
+            .card__skill-info {
+                display: none;
             }
         }
     }
