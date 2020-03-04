@@ -43,7 +43,7 @@
     .card-wrapper {
         .card__list-skills {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             .card__skill-wrapper {
                 .card__skill-info {
                     display: block;
