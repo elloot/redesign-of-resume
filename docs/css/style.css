@@ -304,6 +304,10 @@ a {
   display: none;
 }
 
+.footer-wrapper .card-wrapper {
+  width: 300px;
+}
+
 @media only screen and (min-width: 576px) {
   .container {
     max-width: 673px;
@@ -347,7 +351,7 @@ a {
             justify-content: space-between;
   }
   .card-wrapper {
-    padding: 24px;
+    padding: 36px;
   }
   .card-wrapper .card__list-skills {
     display: -webkit-box;
