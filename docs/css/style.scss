@@ -217,6 +217,10 @@ a {
         justify-content: space-evenly;
     }
     .card__list-skills {
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .card__skill-wrapper {
             .card__skill-title {
                 font-size: $body-1-font-size;
