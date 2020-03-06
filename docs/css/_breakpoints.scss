@@ -48,7 +48,10 @@
         .card__list-skills {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            margin-top: 36px;
             .card__skill-wrapper {
+                width: 270px;
                 .card__skill-info {
                     display: block;
                 }

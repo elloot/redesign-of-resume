@@ -367,6 +367,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 36px;
+  }
+  .card-wrapper .card__list-skills .card__skill-wrapper {
+    width: 270px;
   }
   .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
     display: block;
