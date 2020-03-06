@@ -231,8 +231,27 @@ a {
   list-style: none;
 }
 
-.card-wrapper .card__list li .contact-info {
+.card-wrapper .card__list li .contact-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-wrapper .card__list li .contact-link svg {
+  fill: #ffa84a;
+  height: 37.63506px;
+}
+
+.card-wrapper .card__list li .contact-link .contact-info {
   color: #ffba6e;
+  margin-left: 12px;
 }
 
 .card-wrapper .card__list li .social-link {
@@ -258,6 +277,20 @@ a {
   margin-left: 12px;
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
+}
+
+.card-wrapper .card__list-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-title {
