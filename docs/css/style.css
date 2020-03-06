@@ -297,7 +297,6 @@ a {
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #ffba6e;
-  font-weight: bold;
 }
 
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
@@ -371,6 +370,9 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 36px;
+  }
+  .card-wrapper .card__list-skills .card__skill-title {
+    font-weight: bold;
   }
   .card-wrapper .card__list-skills .card__skill-wrapper {
     width: 270px;
