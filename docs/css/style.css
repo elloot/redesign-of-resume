@@ -250,10 +250,14 @@ a {
 
 .card-wrapper .card__list li .social-link svg {
   fill: #ffa84a;
+  margin-top: 12px;
 }
 
 .card-wrapper .card__list li .social-link p {
   color: #ffba6e;
+  margin-left: 12px;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-title {

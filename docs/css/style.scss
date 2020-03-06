@@ -190,9 +190,12 @@ a {
                 align-items: center;
                 svg {
                     fill: $darker-orange;
+                    margin-top: 12px;
                 }
                 p {
                     color: $lighter-orange;
+                    margin-left: 12px;
+                    transform: translateY(20%);
                 }
             }
         }
