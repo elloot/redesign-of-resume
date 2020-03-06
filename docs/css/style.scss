@@ -181,6 +181,9 @@ a {
     .card__list {
         li {
             list-style: none;
+            .contact-info {
+                color: $lighter-orange;
+            }
             .social-link {
                 display: flex;
                 flex-direction: row;

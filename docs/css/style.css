@@ -231,6 +231,10 @@ a {
   list-style: none;
 }
 
+.card-wrapper .card__list li .contact-info {
+  color: #ffba6e;
+}
+
 .card-wrapper .card__list li .social-link {
   display: -webkit-box;
   display: -ms-flexbox;
