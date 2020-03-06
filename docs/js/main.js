@@ -63,3 +63,32 @@
     aboutMeRestructure(desktopQuery);
     desktopQuery.addListener(aboutMeRestructure);
 })();
+
+(() => {
+    let skillArray = document.querySelectorAll("#skillTitle");
+    let list = document.querySelector(".card__list-skills");
+    //let pList = list.childNodes.childNodes.getElementsByTagName("p");
+    let pList = document.querySelectorAll("#testing");
+    let shit = false;
+
+    skillArray.forEach(function(skill) {
+        skill.addEventListener("click", e => {
+            let temp = e.currentTarget;
+            temp.parentNode.getElementsByTagName("p")[0].classList.toggle("show-skill-info");
+
+            pList.forEach(elem => {
+                if (elem.style.display === "none") {
+                    shit = false;
+                } else {
+                    shit = true;
+                }
+            });
+
+            if (shit) {
+                list.classList.remove("height-inherit");
+            } else {
+                list.classList.add("height-inherit");
+            }
+        });
+    });
+})();
