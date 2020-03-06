@@ -21,6 +21,7 @@
             title.parentNode.removeChild(title);
             cardContainer.insertBefore(title, text);
 
+            //can I make this into a function?
             let addedToDocument = false,
                 wrapper = document.createElement("div"),
                 nodesToWrap = document.querySelectorAll(".aboutMeToWrap");
