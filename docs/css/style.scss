@@ -179,6 +179,10 @@ a {
         }
     }
     .card__list {
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         li {
             list-style: none;
             .contact-link {
@@ -200,27 +204,23 @@ a {
                 align-items: center;
                 svg {
                     fill: $darker-orange;
-                    margin-top: 12px;
                 }
                 p {
                     color: $lighter-orange;
                     margin-left: 12px;
-                    transform: translateY(20%);
                 }
             }
         }
     }
+    .card__list-social-links {
+        height: 140px;
+    }
     .card__list-contact {
         display: flex;
         flex-direction: column;
-        height: 80%;
         justify-content: space-evenly;
     }
     .card__list-skills {
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         .card__skill-wrapper {
             .card__skill-title {
                 font-size: $body-1-font-size;

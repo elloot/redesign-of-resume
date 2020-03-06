@@ -227,6 +227,20 @@ a {
   border-radius: 50%;
 }
 
+.card-wrapper .card__list {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .card-wrapper .card__list li {
   list-style: none;
 }
@@ -269,14 +283,15 @@ a {
 
 .card-wrapper .card__list li .social-link svg {
   fill: #ffa84a;
-  margin-top: 12px;
 }
 
 .card-wrapper .card__list li .social-link p {
   color: #ffba6e;
   margin-left: 12px;
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+}
+
+.card-wrapper .card__list-social-links {
+  height: 140px;
 }
 
 .card-wrapper .card__list-contact {
@@ -287,24 +302,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 80%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-.card-wrapper .card__list-skills {
-  height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-title {
@@ -393,6 +393,9 @@ a {
   }
   .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
     display: block;
+  }
+  .card-wrapper .card__list-contact {
+    height: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
