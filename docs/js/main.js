@@ -12,17 +12,49 @@
     let title = document.querySelector("#aboutMeTitle"),
         image = document.querySelector("#aboutMeImage"),
         text = document.querySelector("#aboutMeText"),
-        container = document.querySelector("#aboutMeContainer");
+        cardContainer = document.querySelector("#aboutMeContainer"),
+        isWrapped = false;
 
     function aboutMeRestructure(mediaQuery) {
         if (mediaQuery.matches) {
             //restructures the About me card for desktop
             title.parentNode.removeChild(title);
-            container.insertBefore(title, text);
+            cardContainer.insertBefore(title, text);
+
+            let addedToDocument = false,
+                wrapper = document.createElement("div"),
+                nodesToWrap = document.querySelectorAll(".aboutMeToWrap");
+
+            wrapper.id = "aboutMeDesktopContainer";
+
+            for (let index = 0; index < nodesToWrap.length; index++) {
+                let node = nodesToWrap[index];
+                if (!addedToDocument) {
+                    node.parentNode.insertBefore(wrapper, node);
+                    addedToDocument = true;
+                }
+                node.parentNode.removeChild(node);
+                wrapper.appendChild(node);
+            }
+            isWrapped = true;
+
+            document.querySelector("#aboutMeDesktopContainer").classList.add("text-title-container");
         } else {
             //restructures the About me card for smaller screens
+
+            if (isWrapped) {
+                let wrapper = document.querySelector("#aboutMeDesktopContainer");
+                let nodesToUnwrap = document.querySelectorAll(".aboutMeToWrap");
+
+                for (let index = 0; index < nodesToUnwrap.length; index++) {
+                    let node = nodesToUnwrap[index];
+                    cardContainer.insertBefore(node, wrapper);
+                }
+                wrapper.parentNode.removeChild(wrapper);
+            }
+
             title.parentNode.removeChild(title);
-            container.insertBefore(title, image);
+            cardContainer.insertBefore(title, image);
         }
     }
 
