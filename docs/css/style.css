@@ -308,20 +308,11 @@ a {
   .container {
     max-width: 673px;
   }
-  .card__title {
-    /*font-size: 2.0625rem;*/
-  }
-  .card__text {
-    /*font-size: 1.25rem;*/
-  }
 }
 
 @media only screen and (min-width: 768px) {
   .navbar .navbar__social-links {
     display: block;
-  }
-  .card__title {
-    font-size: 2.625rem;
   }
   .card__image-wrapper {
     max-width: 350px !important;
@@ -333,6 +324,22 @@ a {
   .container {
     width: 96%;
     max-width: 988px;
+  }
+  .about-me-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*justify-content: space-between;*/
+  }
+  .about-me-wrapper .card__image-container {
+    width: inherit;
+  }
+  .about-me-wrapper .text-title-container {
+    width: 300px;
+    margin: 0 auto;
   }
   .footer-wrapper {
     display: -webkit-box;
