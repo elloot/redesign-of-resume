@@ -50,11 +50,13 @@
             flex-direction: row;
             justify-content: space-between;
             margin-top: 36px;
-            .card__skill-title {
-                font-weight: bold;
-            }
+            height: inherit;
             .card__skill-wrapper {
                 width: 270px;
+                .card__skill-title {
+                    font-weight: bold;
+                    cursor: auto;
+                }
                 .card__skill-info {
                     display: block;
                 }

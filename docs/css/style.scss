@@ -141,6 +141,10 @@ a {
     transform: translateY(0) translateX(-50%);
 }
 
+.show-skill-info {
+    display: block !important;
+}
+
 .social-link {
     svg {
         fill: white;
@@ -226,6 +230,7 @@ a {
                 font-size: $body-1-font-size;
                 letter-spacing: $body-1-letter-spacing;
                 color: $lighter-orange;
+                cursor: pointer;
             }
             .card__skill-info {
                 display: none;
