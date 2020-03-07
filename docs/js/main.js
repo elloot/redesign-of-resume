@@ -1,6 +1,6 @@
 (() => {
-    let button = document.querySelector("#hamburger-toggle");
-    let menu = document.querySelector("#menu");
+    const button = document.querySelector("#hamburger-toggle");
+    const menu = document.querySelector("#menu");
 
     button.addEventListener("click", e => {
         menu.classList.toggle("show-menu");
@@ -9,11 +9,12 @@
 })();
 
 (() => {
-    let title = document.querySelector("#aboutMeTitle"),
+    const title = document.querySelector("#aboutMeTitle"),
         image = document.querySelector("#aboutMeImage"),
         text = document.querySelector("#aboutMeText"),
-        cardContainer = document.querySelector("#aboutMeContainer"),
-        isWrapped = false;
+        cardContainer = document.querySelector("#aboutMeContainer");
+
+    let isWrapped = false;
 
     function aboutMeRestructure(mediaQuery) {
         if (mediaQuery.matches) {
@@ -65,29 +66,29 @@
 })();
 
 (() => {
-    let skillArray = document.querySelectorAll("#skillTitle");
-    let list = document.querySelector(".card__list-skills");
-    //let pList = list.childNodes.childNodes.getElementsByTagName("p");
-    let pList = document.querySelectorAll("#testing");
-    let shit = false;
+    const skillArray = document.querySelectorAll("#skillTitle"),
+        list = document.querySelector(".card__list-skills"),
+        pList = document.querySelectorAll("#testing");
+    let isOpen = false;
 
     skillArray.forEach(function(skill) {
         skill.addEventListener("click", e => {
             let temp = e.currentTarget;
             temp.parentNode.getElementsByTagName("p")[0].classList.toggle("show-skill-info");
 
-            pList.forEach(elem => {
-                if (elem.style.display === "none") {
-                    shit = false;
+            for (let i = 0; i < pList.length; i++) {
+                if (pList[i].classList.contains("show-skill-info")) {
+                    isOpen = true;
+                    break;
                 } else {
-                    shit = true;
+                    isOpen = false;
                 }
-            });
+            }
 
-            if (shit) {
-                list.classList.remove("height-inherit");
-            } else {
+            if (isOpen) {
                 list.classList.add("height-inherit");
+            } else {
+                list.classList.remove("height-inherit");
             }
         });
     });
