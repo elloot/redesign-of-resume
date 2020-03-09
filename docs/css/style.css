@@ -273,7 +273,7 @@ a {
 }
 
 .card-wrapper .card__list li .contact-link .contact-info {
-  color: #ffba6e;
+  color: #ffa84a;
   margin-left: 12px;
 }
 
@@ -295,7 +295,7 @@ a {
 }
 
 .card-wrapper .card__list li .social-link p {
-  color: #ffba6e;
+  color: #ffa84a;
   margin-left: 12px;
 }
 
@@ -331,7 +331,7 @@ a {
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-title {
   font-size: 16px;
   letter-spacing: 0.5px;
-  color: #ffba6e;
+  color: #ffa84a;
   cursor: pointer;
 }
 
@@ -344,7 +344,7 @@ a {
 }
 
 .highlighted-text {
-  color: #ffba6e !important;
+  color: #ffa84a !important;
 }
 
 @media only screen and (min-width: 576px) {

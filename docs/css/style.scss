@@ -205,7 +205,7 @@ a {
                     height: 0.09134722222222222222 * 412px;
                 }
                 .contact-info {
-                    color: $lighter-orange;
+                    color: $darker-orange;
                     margin-left: 12px;
                 }
             }
@@ -217,7 +217,7 @@ a {
                     fill: $darker-orange;
                 }
                 p {
-                    color: $lighter-orange;
+                    color: $darker-orange;
                     margin-left: 12px;
                 }
             }
@@ -246,7 +246,7 @@ a {
             .card__skill-title {
                 font-size: $body-1-font-size;
                 letter-spacing: $body-1-letter-spacing;
-                color: $lighter-orange;
+                color: $darker-orange;
                 cursor: pointer;
             }
             .card__skill-info {
@@ -271,7 +271,7 @@ a {
 }
 
 .highlighted-text {
-    color: $lighter-orange !important;
+    color: $darker-orange !important;
 }
 
 @import "./breakpoints";
