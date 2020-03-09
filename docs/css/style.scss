@@ -144,8 +144,9 @@ a {
 }
 
 .show-skill-info {
-    display: block !important;
-    margin: 0 12px !important;
+    /*display: block !important;*/
+    max-height: 200px !important;
+    overflow: auto;
 }
 
 .social-link {
@@ -256,7 +257,10 @@ a {
                 cursor: pointer;
             }
             .card__skill-info {
-                display: none;
+                margin: 0 12px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
             }
         }
     }

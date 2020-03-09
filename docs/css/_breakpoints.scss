@@ -65,7 +65,9 @@
                     cursor: auto;
                 }
                 .card__skill-info {
+                    margin: 0;
                     display: block;
+                    max-height: 900px;
                 }
             }
         }

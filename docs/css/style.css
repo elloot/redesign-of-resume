@@ -171,8 +171,9 @@ a {
 }
 
 .show-skill-info {
-  display: block !important;
-  margin: 0 12px !important;
+  /*display: block !important;*/
+  max-height: 200px !important;
+  overflow: auto;
 }
 
 .social-link svg {
@@ -348,7 +349,11 @@ a {
 }
 
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
-  display: none;
+  margin: 0 12px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .card-wrapper .card__list-exp-edu {
@@ -461,7 +466,9 @@ a {
     cursor: auto;
   }
   .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
+    margin: 0;
     display: block;
+    max-height: 900px;
   }
   .card-wrapper .card__list-contact {
     height: 80%;
