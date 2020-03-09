@@ -256,6 +256,14 @@ a {
     }
     .card__list-exp-edu {
         height: inherit;
+        li {
+            display: flex;
+            flex-direction: column;
+            .card__exp-edu-text {
+                display: inline-block;
+                max-width: 600px;
+            }
+        }
     }
     /*
     .card__image-wrapper {

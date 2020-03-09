@@ -343,6 +343,21 @@ a {
   height: inherit;
 }
 
+.card-wrapper .card__list-exp-edu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-wrapper .card__list-exp-edu li .card__exp-edu-text {
+  display: inline-block;
+  max-width: 600px;
+}
+
 .highlighted-text {
   color: #ffa84a !important;
 }
@@ -375,7 +390,6 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /*justify-content: space-between;*/
   }
   .about-me-wrapper .card__image-container {
     width: inherit;
