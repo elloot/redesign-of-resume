@@ -75,21 +75,6 @@
         skill.addEventListener("click", e => {
             let temp = e.currentTarget;
             temp.parentNode.getElementsByTagName("p")[0].classList.toggle("show-skill-info");
-
-            for (let i = 0; i < pList.length; i++) {
-                if (pList[i].classList.contains("show-skill-info")) {
-                    isOpen = true;
-                    break;
-                } else {
-                    isOpen = false;
-                }
-            }
-
-            if (isOpen) {
-                list.classList.add("height-inherit");
-            } else {
-                list.classList.remove("height-inherit");
-            }
         });
     });
 })();
