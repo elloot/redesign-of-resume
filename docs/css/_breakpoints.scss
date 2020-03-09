@@ -39,7 +39,7 @@
         flex-direction: row;
         justify-content: space-between;
         .card-wrapper {
-            width: 300px;
+            width: calc(50% - 12px);
         }
     }
     //is it better to nest everything or should I use "!important"?

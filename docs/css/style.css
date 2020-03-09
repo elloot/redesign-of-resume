@@ -397,7 +397,7 @@ a {
             justify-content: space-between;
   }
   .footer-wrapper .card-wrapper {
-    width: 300px;
+    width: calc(50% - 12px);
   }
   .card-wrapper {
     padding: 36px;
