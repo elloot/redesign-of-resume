@@ -68,7 +68,7 @@
 (() => {
     const skillArray = document.querySelectorAll("#skillTitle"),
         list = document.querySelector(".card__list-skills"),
-        pList = document.querySelectorAll("#testing");
+        pList = document.querySelectorAll(".card__skill-info");
     let isOpen = false;
 
     skillArray.forEach(function(skill) {
