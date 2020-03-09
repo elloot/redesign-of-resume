@@ -66,10 +66,7 @@
 })();
 
 (() => {
-    const skillArray = document.querySelectorAll("#skillTitle"),
-        list = document.querySelector(".card__list-skills"),
-        pList = document.querySelectorAll(".card__skill-info");
-    let isOpen = false;
+    const skillArray = document.querySelectorAll("#skillTitle");
 
     skillArray.forEach(function(skill) {
         skill.addEventListener("click", e => {
