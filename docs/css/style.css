@@ -205,7 +205,7 @@ a {
 .card-wrapper .card__title {
   font-size: 34px;
   letter-spacing: 0.25px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .card-wrapper .card__text {
@@ -299,6 +299,18 @@ a {
   margin-left: 12px;
 }
 
+.card-wrapper .card__list li .card__exp-edu-title {
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+.card-wrapper .card__list li .card__duration-text {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  font-weight: 550;
+}
+
 .card-wrapper .card__list-social-links {
   height: 140px;
 }
@@ -325,6 +337,14 @@ a {
 
 .card-wrapper .card__list-skills .card__skill-wrapper .card__skill-info {
   display: none;
+}
+
+.card-wrapper .card__list-exp-edu {
+  height: inherit;
+}
+
+.highlighted-text {
+  color: #ffba6e !important;
 }
 
 @media only screen and (min-width: 576px) {

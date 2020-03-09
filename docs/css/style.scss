@@ -8,6 +8,8 @@ $h5-font-size: 24px;
 $h5-letter-spacing: 0;
 $body-1-font-size: 16px;
 $body-1-letter-spacing: 0.5px;
+$subtitle-2-font-size: 14px;
+$subtitle-2-letter-spacing: 0.1px;
 
 * {
     margin: 0;
@@ -165,7 +167,7 @@ a {
     .card__title {
         font-size: $h4-font-size;
         letter-spacing: $h4-letter-spacing;
-        font-style: normal;
+        font-weight: normal;
     }
     .card__text {
         font-size: $body-1-font-size;
@@ -219,6 +221,16 @@ a {
                     margin-left: 12px;
                 }
             }
+            .card__exp-edu-title {
+                font-size: $h5-font-size;
+                letter-spacing: $h5-letter-spacing;
+                font-weight: normal;
+            }
+            .card__duration-text {
+                font-size: $subtitle-2-font-size;
+                letter-spacing: $subtitle-2-letter-spacing;
+                font-weight: 550;
+            }
         }
     }
     .card__list-social-links {
@@ -242,6 +254,9 @@ a {
             }
         }
     }
+    .card__list-exp-edu {
+        height: inherit;
+    }
     /*
     .card__image-wrapper {
         width: 100%;
@@ -253,6 +268,10 @@ a {
         }
     }
     */
+}
+
+.highlighted-text {
+    color: $lighter-orange !important;
 }
 
 @import "./breakpoints";
