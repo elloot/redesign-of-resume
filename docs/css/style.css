@@ -353,7 +353,12 @@ a {
           flex-direction: column;
 }
 
+.card-wrapper .card__list-exp-edu li:not(:last-child) {
+  margin: 16px 0 24px 0;
+}
+
 .card-wrapper .card__list-exp-edu li .card__exp-edu-text {
+  margin-top: 12px;
   display: inline-block;
   max-width: 600px;
 }
