@@ -148,10 +148,6 @@ a {
     margin: 0 12px !important;
 }
 
-.height-inherit {
-    height: inherit !important;
-}
-
 .social-link {
     svg {
         fill: white;
@@ -195,6 +191,9 @@ a {
         flex-direction: column;
         justify-content: space-between;
         li {
+            &:first-child {
+                margin-top: 6px;
+            }
             list-style: none;
             .contact-link {
                 display: flex;
@@ -240,9 +239,16 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        li {
+            margin-top: 6px;
+        }
     }
     .card__list-skills {
+        height: inherit;
         .card__skill-wrapper {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
             .card__skill-title {
                 font-size: $body-1-font-size;
                 letter-spacing: $body-1-letter-spacing;
