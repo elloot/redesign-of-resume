@@ -1,3 +1,4 @@
+let desktopQuery = window.matchMedia("(min-width: 992px)");
 (() => {
     const button = document.querySelector("#hamburger-toggle");
     const menu = document.querySelector("#menu");
@@ -60,7 +61,6 @@
         }
     }
 
-    let desktopQuery = window.matchMedia("(min-width: 992px)");
     aboutMeRestructure(desktopQuery);
     desktopQuery.addListener(aboutMeRestructure);
 })();
@@ -70,8 +70,11 @@
 
     skillArray.forEach(function(skill) {
         skill.addEventListener("click", e => {
-            let temp = e.currentTarget;
-            temp.parentNode.getElementsByTagName("p")[0].classList.toggle("show-skill-info");
+            if (!desktopQuery.matches) {
+                let temp = e.currentTarget;
+                temp.parentNode.getElementsByTagName("p")[0].classList.toggle("show-skill-info");
+                temp.firstChild.classList.toggle("flip-arrow");
+            }
         });
     });
 })();
