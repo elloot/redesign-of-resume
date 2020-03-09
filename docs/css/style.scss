@@ -255,9 +255,17 @@ a {
                 letter-spacing: $body-1-letter-spacing;
                 color: $darker-orange;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                i {
+                    transition: all 0.4s cubic-bezier(0.6, -0.48, 0.34, 1.45);
+                }
+                .flip-arrow {
+                    transform: rotate(-180deg);
+                }
             }
             .card__skill-info {
-                margin: 0 12px;
+                margin: 0 24px;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease-in-out;

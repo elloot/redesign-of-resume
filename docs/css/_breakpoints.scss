@@ -63,6 +63,9 @@
                 .card__skill-title {
                     font-weight: bold;
                     cursor: auto;
+                    i {
+                        display: none;
+                    }
                 }
                 .card__skill-info {
                     margin: 0;
